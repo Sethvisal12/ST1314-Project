@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="animated-button">
+        Click me!
+        <span class="button-border"></span>
+      </button>
+      <style>
+        .animated-button {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .animated-button:hover .button-border {
+    width: 100%;
+  }
+  
+  .button-border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background-color: #fff;
+    transition: width 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+      </style>
+</body>
+</html>

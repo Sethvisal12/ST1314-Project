@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.0.min.js"></script>
+    <style>
+        .box{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="t1" /> + <input type="text" id="22"/> <button onclick="fnSum()">=</button>
+    <div id="mydiv"></div>
+    <button id="btnAdd">Add Element</button>
+    
+      <script>
+        $(document).ready(function(){
+            let i = 1;
+            
+        });
+        function fnSum(){
+            var t1 = document.getElementById("t1").value;
+            var t2 = document.getElementById("t2").value;
+            var sum = parseInT(t1) + paraInt(t2);
+            alert("Sum = " + sum);
+        }
+      </script>
+      
+</body>
+</html>
